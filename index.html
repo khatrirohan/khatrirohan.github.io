@@ -155,11 +155,6 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         
-                        <script type="text/javascript">var submitted=false;</script>
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                                onload="if(submitted) {window.alert("Thank you! We will get back to you soon...");}">
-                            </iframe>
-                        
                         
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                         <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9cMzRyiTBxD2cGImBh-t0ewacUrfcFX-4Jq53fdb0bTzVtQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
@@ -475,5 +470,13 @@ Menu access is given according to a specific role in the organization.</p>
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+onload="if(submitted) {
+    if(!alert('Thank you! We will get back to you soon.')){window.location.reload();}
+   
+}"></iframe>
+
     </body>
 </html>
