@@ -155,9 +155,11 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         
-                        <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-onload="if(submitted) {alert("Thank you! We will get back to you soon...");}"></iframe>
+                        <script type="text/javascript">var submitted=false;
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+                                onload="if(submitted) {window.alert("Thank you! We will get back to you soon...");}">
+                            </iframe>
+                        </script>
                         
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                         <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9cMzRyiTBxD2cGImBh-t0ewacUrfcFX-4Jq53fdb0bTzVtQ/formResponse" method="POST" novalidate="novalidate" target="hidden_iframe" onsubmit="submitted=true;">
@@ -178,7 +180,7 @@ onload="if(submitted) {alert("Thank you! We will get back to you soon...");}"></
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Phone Number</label>
-                                    <input name="entry.1166974658" class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
+                                    <input name="entry.1166974658" class="form-control" id="phone" type="tel" placeholder="Phone Number" data-validation-required-message="Please enter your phone number." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
